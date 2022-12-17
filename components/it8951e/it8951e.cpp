@@ -335,7 +335,7 @@ void IT8951ESensor::update() {
 
 void HOT IT8951ESensor::draw_absolute_pixel_internal(int x, int y, Color color) {
   if (x >= this->get_width_internal() || y >= this->get_height_internal() || x < 0 || y < 0) {
-    ESP_LOGE(TAG, "Drawing outside the screen size!");
+    //ESP_LOGE(TAG, "Drawing outside the screen size!");
     return;
   }
 
