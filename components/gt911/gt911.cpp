@@ -81,7 +81,7 @@ void GT911::loop(){
           default:
             break;
         }
-        ESP_LOGE(TAG, "TOUCH %i, X: %i Y:%i ONE %i, TWO %i, ROT: %i", i, tp.x, tp.y, dimension_one, dimension_two, this->rotation_);
+        //ESP_LOGE(TAG, "TOUCH %i, X: %i Y:%i ONE %i, TWO %i, ROT: %i", i, tp.x, tp.y, dimension_one, dimension_two, this->rotation_);
 
         this->defer([this, tp]() { this->send_touch_(tp); });
 
