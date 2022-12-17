@@ -293,7 +293,7 @@ void IT8951ESensor::write_display() {
 
  //this->write_command(IT8951_TCON_SYS_RUN);
  this->write_buffer_to_display(0, 0, this->max_x, this->max_y, this->buffer_);
- this->update_area(0, 0, this->max_x, this->max_y, UPDATE_MODE_DU4);
+ this->update_area(0, 0, this->max_x, this->max_y, UPDATE_MODE_GC16);
 
  this->max_x = 0;
  this->max_y = 0;
